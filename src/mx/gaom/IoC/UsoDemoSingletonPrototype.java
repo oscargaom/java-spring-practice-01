@@ -1,11 +1,10 @@
-package mx.gaom.IoC;
+package mx.gaom.ioc;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class UsoDemoSingletonPrototype {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext2.xml");
 
 		SecretarioEmpleado juan = contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);

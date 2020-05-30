@@ -1,4 +1,4 @@
-package mx.gaom.IoC;
+package mx.gaom.ioc;
 
 public class SecretarioEmpleado implements IEmpleados {
 
@@ -7,6 +7,13 @@ public class SecretarioEmpleado implements IEmpleados {
 	private String email;
 
 	private String nombreEmpresa;
+
+	/**
+	 * @param informeNuevo the informeNuevo to set
+	 */
+	public void setValueToInformeNuevo(ICreacionInformes informe) {
+		this.informeNew = informe;
+	}
 
 	/**
 	 * @return the email
@@ -36,22 +43,13 @@ public class SecretarioEmpleado implements IEmpleados {
 		this.nombreEmpresa = ne;
 	}
 
-	/**
-	 * @param informeNuevo the informeNuevo to set
-	 */
-	public void setValueToInformeNuevo(ICreacionInformes informe) {
-		this.informeNew = informe;
-	}
-
 	@Override
 	public String getTareas() {
-		// TODO Auto-generated method stub
 		return "Gestionar la agenda de los Jefes";
 	}
 
 	@Override
 	public String getInforme() {
-		// TODO Auto-generated method stub
 		return "Reporte generado por el Secretario: " + informeNew.getInforme();
 	}
 

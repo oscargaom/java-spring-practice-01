@@ -1,4 +1,4 @@
-package mx.gaom.IoC;
+package mx.gaom.ioc;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,7 +12,7 @@ public class UsoCicloVidaBean {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext3.xml");
 
 		DirectorEmpleado juan = contexto.getBean("miEmpleado", DirectorEmpleado.class);

@@ -12,18 +12,18 @@
 	<context:property-placeholder
 		location="classpath:datosEmpresa.propiedades" />
 
-	<bean id="miInforme" class="mx.gaom.IoC.Informe">
+	<bean id="miInforme" class="mx.gaom.ioc.Informe">
 
 	</bean>
 
-	<bean id="miEmpleado" class="mx.gaom.IoC.DirectorEmpleado">
+	<bean id="miEmpleado" class="mx.gaom.ioc.DirectorEmpleado">
 		<constructor-arg ref="miInforme"></constructor-arg>
 		<property name="email" value="${email}"></property>
 		<property name="nombreEmpresa" value="${nombreEmpresa}"></property>
 	</bean>
 
 	<bean id="miSecretarioEmpleado"
-		class="mx.gaom.IoC.SecretarioEmpleado">
+		class="mx.gaom.ioc.SecretarioEmpleado">
 		<property name="valueToInformeNuevo" ref="miInforme"></property>
 		<property name="email" value="secretario_group@test.com"></property>
 		<property name="nombreEmpresa" value="Masnomina"></property>

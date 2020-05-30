@@ -10,11 +10,11 @@
 ">
 
 
-	<bean id="miInforme" class="mx.gaom.IoC.Informe">
+	<bean id="miInforme" class="mx.gaom.ioc.Informe">
 	</bean>
 
 	<bean id="miSecretarioEmpleado"
-		class="mx.gaom.IoC.SecretarioEmpleado" scope="prototype">
+		class="mx.gaom.ioc.SecretarioEmpleado" scope="singleton">
 		<property name="valueToInformeNuevo" ref="miInforme"></property>
 	</bean>
 

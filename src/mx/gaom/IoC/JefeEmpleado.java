@@ -1,4 +1,4 @@
-package mx.gaom.IoC;
+package mx.gaom.ioc;
 
 public class JefeEmpleado implements IEmpleados {
 	
@@ -10,12 +10,11 @@ public class JefeEmpleado implements IEmpleados {
 	}
 
 	public String getTareas() {	
-		return "Gestiono las cuestiones relativas a mis empleados de sección";
+		return "Gestiono las cuestiones relativas a mis empleados de secciÃ³n";
 	}
 
 	@Override
 	public String getInforme() {
-		// TODO Auto-generated method stub
 		return "Informe presentado por el Jefe con rectificaciones: " + informeNuevo.getInforme();
 	}
 	

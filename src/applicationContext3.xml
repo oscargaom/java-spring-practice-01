@@ -12,10 +12,10 @@
 	<context:property-placeholder
 		location="classpath:datosEmpresa.propiedades" />
 
-	<bean id="miInforme" class="mx.gaom.IoC.Informe">
+	<bean id="miInforme" class="mx.gaom.ioc.Informe">
 	</bean>
 
-	<bean id="miEmpleado" class="mx.gaom.IoC.DirectorEmpleado" 
+	<bean id="miEmpleado" class="mx.gaom.ioc.DirectorEmpleado" 
 	 init-method="init" destroy-method="destroy">
 		<constructor-arg ref="miInforme"></constructor-arg>
 	</bean>
